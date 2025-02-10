@@ -1,19 +1,19 @@
-# Tarih ve Saat Farkı Hesaplayıcı ⏳
+# Tarih ve Saat Farkı Hesaplayıcı 
 
 Bu proje, iki tarih ve saat bilgisi arasındaki farkı saniye, dakika, saat ve gün cinsinden hesaplayan bir C programıdır. Program, kullanıcıdan iki farklı tarih ve saat bilgisi alarak bunları **Epoch zamanına** (Unix Timestamp) dönüştürür ve aralarındaki farkı hesaplar.
 
 ---
 
-## 🚀 Özellikler
+# Özellikler
 
-✅ Kullanıcıdan iki tarih ve saat bilgisi alma  
-✅ Tarih ve saat bilgisini **Epoch zamanına** çevirme  
-✅ İki zaman arasındaki farkı saniye, dakika, saat ve gün olarak gösterme  
-✅ `mktime()` fonksiyonunu kullanarak tarih dönüşümü yapma  
+- Kullanıcıdan iki tarih ve saat bilgisi alma  
+- Tarih ve saat bilgisini **Epoch zamanına** çevirme  
+- İki zaman arasındaki farkı saniye, dakika, saat ve gün olarak gösterme  
+- `mktime()` fonksiyonunu kullanarak tarih dönüşümü yapma  
 
 ---
 
-## 📌 Kullanım
+## Kullanım
 
 1. Kullanıcıdan aşağıdaki formatta giriş yapması istenir:
    ```
