@@ -1,6 +1,6 @@
 # Tarih ve Saat Farkı Hesaplayıcı 
 
-Bu proje, iki tarih ve saat bilgisi arasındaki farkı saniye, dakika, saat ve gün cinsinden hesaplayan bir C programıdır. Program, kullanıcıdan iki farklı tarih ve saat bilgisi alarak bunları **Epoch zamanına** (Unix Timestamp) dönüştürür ve aralarındaki farkı hesaplar.
+Bu proje, iki tarih ve saat bilgisi arasındaki farkı saniye, dakika, saat ve gün cinsinden hesaplayan bir C programıdır. Program, kullanıcıdan iki farklı tarih ve saat bilgisi alarak bunları **Epoch zamanına** (Unix Timestamp) dönüştürür ve aralarındaki farkı hesaplar.Bilgisayar bilimi ve bilişim teknolojilerinde epoch terimi, sistemlerin zaman hesaplamalarında kritik bir rol oynayan bir referans noktasıdır. Temel olarak, epoch 1 Ocak 1970 saat 00:00:00 UTC (Koordineli Evrensel Zaman) olarak tanımlanır ve bu tarih bilgisayar sistemlerinde standart bir başlangıç zamanı olarak kabul edilir.Epoch zamanı, söz konusu referans noktasından itibaren geçen toplam saniye sayısını ifade eder ve bilgisayar sistemlerinde tarih ve saat bilgilerinin hesaplanmasında yaygın olarak kullanılır. 
 
 ---
 
