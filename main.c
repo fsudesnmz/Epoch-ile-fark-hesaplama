@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-//Tarih ve saat bilgilerini tutacak struct yapısı.
+//Tarih ve saat bilgilerini tutacak struct yapÄ±sÄ±.
 struct DateTime {
 	struct {
 	 int year;
@@ -17,13 +17,13 @@ struct DateTime {
 	} time;
 };
 
-// DateTime struct'ını epoch'a çeviren fonksiyon
-//Epoch zamanı (Unix zamanı olarak da bilinir), 1 Ocak 1970 00:00:00 UTC'den itibaren geçen saniye sayısını temsil eden bir zaman ölçüm sistemidir.
-//Bu sistem, bilgisayar sistemlerinde tarih ve saat işlemlerini kolaylaştırır.
+// DateTime struct'Ä±nÄ± epoch'a Ã§eviren fonksiyon
+//Epoch zamanÄ± (Unix zamanÄ± olarak da bilinir), 1 Ocak 1970 00:00:00 UTC'den itibaren geÃ§en saniye sayÄ±sÄ±nÄ± temsil eden bir zaman Ã¶lÃ§Ã¼m sistemidir.
+//Bu sistem, bilgisayar sistemlerinde tarih ve saat iÅŸlemlerini kolaylaÅŸtÄ±rÄ±r.
 time_t convertToEpoch(struct DateTime dt) {
     struct tm timeinfo = {0};
-    timeinfo.tm_year = dt.date.year - 1900; // tm_year 1900'den başlar
-    timeinfo.tm_mon = dt.date.month - 1;    // tm_mon 0'dan başlar
+    timeinfo.tm_year = dt.date.year - 1900; // tm_year 1900'den baÅŸlar
+    timeinfo.tm_mon = dt.date.month - 1;    // tm_mon 0'dan baÅŸlar
     timeinfo.tm_mday = dt.date.day;
     timeinfo.tm_hour = dt.time.hour;
     timeinfo.tm_min = dt.time.minute;
@@ -37,7 +37,7 @@ int main() {
 	time_t epoch1,epoch2;
 	double difference;
 	
-//Kullanıcıdan birinci ve ikinci tarihler alınır.	
+//KullanÄ±cÄ±dan birinci ve ikinci tarihler alÄ±nÄ±r.	
 	printf("Birinci tarih:\n");
 	printf("Yil(1970-...):");
 	scanf("%d",&dt1.date.year);
@@ -66,15 +66,15 @@ int main() {
 	printf("Saniye(0-59):");
 	scanf("%d",&dt2.time.second);
 
-//Girilen tarihler epoch'a çevrilir.	
+//Girilen tarihler epoch'a Ã§evrilir.	
 	epoch1 = convertToEpoch(dt1);
 	epoch2 = convertToEpoch(dt2);
 	
-//Epoch değerleri ekrana yazılır.
+//Epoch deÄŸerleri ekrana yazÄ±lÄ±r.
     printf("Birinci tarihin epoch\'u: %ld\n",(long)epoch1);
     printf("Ikinci tarihin epoch\'u: %ld\n",(long)epoch2);
     
-//Tarihler arasındaki farkı hesaplama ve ekrana gösterme.
+//Tarihler arasÄ±ndaki farkÄ± hesaplama ve ekrana gÃ¶sterme.
     difference = difftime(epoch2, epoch1);
     printf("\nIki tarih arasindaki fark:\n");
     printf("%.0f saniye\n", difference);
